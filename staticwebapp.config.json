@@ -6,11 +6,7 @@
     },
     {
       "route": "/login",
-      "serve": "/.auth/login/aad"
-    },
-    {
-      "route": "/logout",
-      "serve": "/.auth/logout"
+      "serve": "/login.html"
     }
   ],
   "platformErrorOverrides": [
