@@ -13,7 +13,7 @@
     {
       "errorType": "Unauthenticated",
       "statusCode": "401",
-      "serve": "/login"
+      "serve": "/login.html"
     }
   ],
   "defaultHeaders": {
