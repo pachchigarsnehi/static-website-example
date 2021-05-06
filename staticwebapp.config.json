@@ -1,7 +1,7 @@
 {
   "routes": [
     {
-      "route": "/#*",
+      "route": "/*",
       "allowedRoles": ["authenticated"]
     },
     {
@@ -16,7 +16,7 @@
   "platformErrorOverrides": [
     {
       "errorType": "Unauthenticated",
-      "statusCode": "302",
+      "statusCode": "401",
       "serve": "/login"
     }
   ],
