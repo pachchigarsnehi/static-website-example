@@ -6,7 +6,7 @@
     },
     {
       "route": "/login",
-      "serve": "/login.html"
+      "allowedRoles": ["anonymous"]
     }
   ],
   "platformErrorOverrides": [
