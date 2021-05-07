@@ -10,17 +10,12 @@
       "allowedRoles": ["authenticated"]
     }
   ],
-  "platformErrorOverrides": [
-    {
-      "statusCode": "401",
-      "serve": "/.auth/login/aad"
-    },
-    {
-      "errorType": "Unauthorized",
-      "statusCode": "401",
-      "serve": "/.auth/login/aad"
+  "responseOverrides": {
+    "401": {
+      "redirect": "/login",
+      "statusCode": 302
     }
-  ],
+  },
   "defaultHeaders": {
     "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'"
   },
