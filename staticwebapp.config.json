@@ -7,13 +7,13 @@
     {
       "route": "/*",
       "allowedRoles": ["authenticated"]
-    },
+    }
   ],
   "platformErrorOverrides": [
     {
       "errorType": "Unauthenticated",
       "statusCode": "401",
-      "serve": "/login.html"
+      "serve": "/.auth/login/aad"
     }
   ],
   "defaultHeaders": {
