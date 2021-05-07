@@ -11,7 +11,7 @@
   ],
   "platformErrorOverrides": [
     {
-      "errorType": "Unauthenticated",
+      "errorType": "Unauthorized",
       "statusCode": "401",
       "serve": "/.auth/login/aad"
     }
